@@ -25,3 +25,15 @@ main .sectionfirst img  {
 main .sectionsecond {
   background-color: #1abc9c;
 }
+
+
+main .sectionthird .row a {
+  background-color: #5cc7cb;
+}
+
+footer {
+  background-color: #3a546d;
+}
+footer .footer-bottom {
+  background-color: #2c3e50;
+}
