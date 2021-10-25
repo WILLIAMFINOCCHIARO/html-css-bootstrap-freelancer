@@ -7,6 +7,8 @@
   <title>Bootstrap Freelancer</title>
    <!-- connessione Bootstrap -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!-- connessione font library -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <!-- connessione css -->
    <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,56 +17,140 @@
     <!-- header con righe  -->
 
     <!-- contenitore fluido responsive -->
-  <div class="container-fluid bg-primary">
-    <!-- nav bar -->
-    <div class="row d-flex justify-content-around">
-      <div class="col-6 d-flex justify-content-center">
-        One of three columns
-      </div>
-      <div class="col-6 d-flex justify-content-center ">
-        One of three columns
-      </div>
-       <!-- //navbar -->
-         <!-- riga con immagine e testo a colonna centrale -->
-      <div class="row  text-center">
+  <div class="container-fluid ">
+    <!-- header -->
+    <header>
+      <div class="row d-flex">
+        <div class="col-6 d-flex justify-content-center text-light align-items-center">
+          START BOOTSTRAP
+        </div>
+        <div class="col-6 d-flex justify-content-center ">
+          <ul class="clearfix">
+            <li class="list-group-item float-start bg-transparent border-0 text-light">PORTFOLIO</li>
+            <li class="list-group-item float-start bg-transparent border-0 text-light">ABOUT</li>
+            <li class="list-group-item float-start bg-transparent border-0 text-light">CONTACT</li>
+          </ul>
+        </div>
+    </header>
+
+       <!-- //header -->
+
+       <!-- jumbotron -->
+    <div class="container-fluid">
+       <!-- riga con immagine e testo a colonna centrale -->
+      <div class="jumbotron row  text-center">
         <div class="card w-25 mt-4 mx-auto ">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="img/avatar.svg" class="card-img-top mt-3" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title text-primary ">Card title</h5>
+            <div class="col d-flex justify-content-center ">
+              <div class="w-25 " ><hr class="text-primary"></div>
+              <i class="fas fa-star"></i>
+              <div class="w-25 "><hr  class="text-primary"></div>
+            </div>
+            <p class="card-text text-primary"  >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
-    </div>
+      </div>
         <!-- riga con immagine e testo a colonna centrale -->
-  </div>
-
-  <!-- contenitore dal main in poi -->
-
-  <!-- // contenitore dal main in poi -->
-  <div class="container text-center w-50 ">
-    <div class="row  ">
-      <div class="col-3 my-5  mx-auto ">
-        <h2 class="fs-2">PORTFOLIO</h2>
-      </div>
     </div>
-    <div class="row d-flex flex-wrap">
-      <div class="col-12 bg-secondary ">
-        <div class="card ">
-          <img src="" class="card-img" alt="">
+    <!--// jumbotron -->
+      
+
+    
+        
+    <main class="bg-light">
+       <!-- prima sezione -->
+      <section class="sectionfirst">
+        <div class="container text-center w-50 ">
+          <!-- riga del titolo -->
+          <div class="row ">
+            <div class="col my-5  mx-auto ">
+              <h2 class="fs-2">PORTFOLIO</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex justify-content-center">
+              <div class="w-25 " ><hr class="text-primary"></div>
+              <i class="fas fa-star"> </i>
+              <div class="w-25 "><hr  class="text-primary"></div>
+            </div>
+          </div>
         </div>
-      </div>
+         <!-- riga con immagini -->
+        <div class="row d-flex justify-content-center flex-wrap rounded-3 ">
+          <div class="col-12 my-3 mx-3 ">
+              <img src="img/cabin.png"   alt="">
+          </div>
+          <div class="col-12 my-3 mx-3 ">
+            <img src="img/cake.png"  alt="">
+          </div>
+          <div class="col-12 my-3 mx-3 ">
+            <img src="img/circus.png"  alt="">
+          </div>
+          <div class="col-12 my-3 mx-3 ">
+            <img src="img/game.png"  alt="">
+          </div>
+          <div class="col-12 my-3 mx-3 ">
+            <img src="img/safe.png"  alt="">
+          </div>
+          <div class="col-12 my-3 mx-3 ">
+            <img src="img/submarine.png"  alt="">
+          </div>
+        </div>
+        <!-- //riga con immagine -->
+      </section>
+      <!-- //sezione -->
 
-    </div>
+          <!-- seconda sezione -->
 
-  </div>
+      <section class="sectionsecond">
+        <div class="container text-center w-50 ">
+          <!-- riga del titolo -->
+          <div class="row ">
+            <div class="col my-3  mx-auto ">
+              <h2 class="fs-2 text-light">ABOUT</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex justify-content-center">
+              <div class="w-25 " ><hr class="text-light"></div>
+              <i class="fas fa-star text-light"> </i>
+              <div class="w-25 "><hr  class="text-light"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6 text-light">
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6 text-light">
+              
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <a href="" class="text-light text-decoration-none ">Download</a>
+            </div>
+          </div>
+
+          
+        </div>
+
+      </section>
 
 
+      <!-- // seconda sezione -->
+      
 
-  <!-- //header con due righe -->
-  
-  
 
+             
+        
+    </main>
 
 
 

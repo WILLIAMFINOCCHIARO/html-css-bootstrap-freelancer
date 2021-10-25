@@ -4,21 +4,24 @@
   box-sizing: border-box;
 }
 
+.row.text-center .card img {
+  height: 50%;
+}
 
-contenitore fluido  */
-/* .container-fluid {
+.container-fluid header {
+  background-color: #2c3e50;
+}
+
+.container-fluid .jumbotron,
+.container-fluid .jumbotron .card {
+  background-color: #1abc9c;
+}
+
+main .sectionfirst img  {
   width: 100%;
-  max-width: 100%;
-} */
+  border-radius: 30px;
+}
 
-/* //contenitorefluido */
-
-/* contenitore xs */
-/* .container {
-  width: 540px;
-  max-width: 540px;
-} */
-
-
-
-
+main .sectionsecond {
+  background-color: #1abc9c;
+}
