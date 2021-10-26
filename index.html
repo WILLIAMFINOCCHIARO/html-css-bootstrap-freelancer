@@ -16,44 +16,52 @@
      
     <!-- header con righe  -->
 
-    <!-- contenitore fluido responsive -->
-  <div class="container-fluid ">
     <!-- header -->
     <header>
-      <div class="row d-flex">
-        <div class="col-6 d-flex justify-content-center text-light align-items-center">
-          START BOOTSTRAP
-        </div>
-        <div class="col-6 d-flex justify-content-center ">
-          <ul class="clearfix">
-            <li class="list-group-item float-start bg-transparent border-0 text-light">PORTFOLIO</li>
-            <li class="list-group-item float-start bg-transparent border-0 text-light">ABOUT</li>
-            <li class="list-group-item float-start bg-transparent border-0 text-light">CONTACT</li>
-          </ul>
-        </div>
+      <!-- contenitore  -->
+      <nav class="navbar navbar-dark  ">
+          <div class="container-fluid d-flex justify-content-around align-items-center">
+              <a class="navbar-brand text-white">START BOOTSTRAP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-li "></span>
+              </button>
+              <div class="collapse " id="navbarToggleExternalContent">
+                <div class="p-4">
+                  <ul class="list-group">
+                    <li class="list-group-item">PORTFOLIO</li>
+                    <li class="list-group-item">ABOUT</li>
+                    <li class="list-group-item">CONTACT</li>
+                  </ul>
+              </div>
+         </div>
+      </nav>
     </header>
 
        <!-- //header -->
 
        <!-- jumbotron -->
-    <div class="container-fluid">
+    
        <!-- riga con immagine e testo a colonna centrale -->
       <div class="jumbotron row  text-center">
-        <div class="card w-25 mt-4 mx-auto ">
-          <img src="img/avatar.svg" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-primary ">Card title</h5>
-            <div class="col d-flex justify-content-center ">
-              <div class="w-25 " ><hr class="text-primary"></div>
-              <i class="fas fa-star"></i>
-              <div class="w-25 "><hr  class="text-primary"></div>
-            </div>
-            <p class="card-text text-primary"  >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="container-fluid">
+          <div class="row">
+             <div class="col-12">
+                <div class="card  mt-4 mx-auto ">
+                  <img src="img/avatar.svg" class="card-img-top mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary ">Card title</h5>
+                    <div class="col d-flex justify-content-center ">
+                      <div class="w-25 " ><hr class="text-primary"></div>
+                      <i class="fas fa-star"></i>
+                      <div class="w-25 "><hr  class="text-primary"></div>
+                    </div>
+                    <p class="card-text text-primary"  >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 </div>
+             </div>
           </div>
         </div>
       </div>
         <!-- riga con immagine e testo a colonna centrale -->
-    </div>
     <!--// jumbotron -->
       
 
@@ -62,7 +70,7 @@
     <main class="bg-light">
        <!-- prima sezione -->
       <section class="sectionfirst">
-        <div class="container text-center w-50 ">
+        <div class="container text-center ">
           <!-- riga del titolo -->
           <div class="row ">
             <div class="col mt-5 mb-3  mx-auto ">
@@ -105,7 +113,7 @@
           <!-- seconda sezione -->
 
       <section class="sectionsecond mt-5">
-        <div class="container text-center w-50 ">
+        <div class="container text-center  ">
           <!-- riga del titolo -->
           <div class="row ">
             <div class="col mt-4 mb-3  mx-auto ">
@@ -151,7 +159,7 @@
       <!-- terza sezione  -->
       <section class="sectionthird">
 
-        <div class="container text-center w-100 ">
+        <div class="container text-center ">
           <!-- riga del titolo -->
           <div class="row ">
             <div class="col my-3  mx-auto ">
@@ -191,32 +199,34 @@
     </main>
 
           <!-- inizio footer -->
-    <footer class="d-flex justify-content-center justify-content-around">
-      <div class="row text-light ">
-        <div class="col">
-          <h2 class="text-uppercase">location</h2>
-          <p>2215 John Daniel Drive Clark,MO 54243</p>
-        </div>
-      </div>
-      <div class="row text-light  d-flex flex-column"">
-        <div class="col">
-          <h2 class="text-uppercase">around the web</h2>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-google-plus-g"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-linkedin"></i>
-        </div>
-      </div>
-      <div class="row text-light  d-flex flex-column"">
-        <div class="col">
-          <h2 class="text-uppercase">about freelancer</h2>
-          <p>Freelancer is a free to use,open source Bootstrap theme created by <span> Start Bootstrap.</span></p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="row text-light d-flex flex-column">
-          <div class="col"></div>
-        </div>
+    <footer>
+      <div class="container d-flex justify-content-center justify-content-around">
+          <div class="row text-light ">
+            <div class="col">
+              <h2 class="text-uppercase">location</h2>
+              <p>2215 John Daniel Drive Clark,MO 54243</p>
+            </div>
+          </div>
+          <div class="row text-light  d-flex flex-column"">
+            <div class="col">
+              <h2 class="text-uppercase">around the web</h2>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-google-plus-g"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="row text-light  d-flex flex-column"">
+            <div class="col">
+              <h2 class="text-uppercase">about freelancer</h2>
+              <p>Freelancer is a free to use,open source Bootstrap theme created by <span> Start Bootstrap.</span></p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="row text-light d-flex flex-column">
+              <div class="col"></div>
+            </div>
+          </div>
       </div>
     </footer>
         <!-- //footer -->
